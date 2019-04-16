@@ -1,4 +1,4 @@
-// Type definitions for iview 3.1.0
+// Type definitions for iview 3.3.1
 // Project: https://github.com/iview/iview
 // Definitions by: yangdan
 // Definitions: https://github.com/yangdan8/iview.git
@@ -59,6 +59,11 @@ export declare interface Slider extends Vue {
    * 数字输入框的尺寸，可选值为large、small、default或者不填，仅在开启 show-input 时有效
    */
   'input-size'?: '' | 'large' | 'small' | 'default';
+  /**
+   * 同 InputNumber 的 active-change
+   * @default true
+   */
+  'active-change'?: boolean;
   /**
    * 在松开滑动时触发，返回当前的选值，在滑动过程中不会触发
    */

@@ -1,4 +1,4 @@
-// Type definitions for iview 3.1.0
+// Type definitions for iview 3.3.1
 // Project: https://github.com/iview/iview
 // Definitions by: yangdan
 // Definitions: https://github.com/yangdan8/iview.git
@@ -37,6 +37,11 @@ export declare interface Poptip extends Vue {
    * @default false
    */
   confirm?: boolean;
+  /**
+   * 是否禁用
+   * @default false
+   */
+  disabled?: boolean;
   /**
    * 确定按钮的文字，只在 confirm 模式下有效
    * @default 确定

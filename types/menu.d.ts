@@ -1,4 +1,4 @@
-// Type definitions for iview 3.1.0
+// Type definitions for iview 3.3.1
 // Project: https://github.com/iview/iview
 // Definitions by: yangdan
 // Definitions: https://github.com/yangdan8/iview.git
@@ -71,6 +71,11 @@ export declare interface MenuItem extends Vue {
    * @default _self
    */
   target?: '_blank' | '_self' | '_parent' | '_top';
+  /**
+   * 同 vue-router append
+   * @default false
+   */
+  append?: boolean;
 }
 
 export declare interface MenuSub extends Vue {

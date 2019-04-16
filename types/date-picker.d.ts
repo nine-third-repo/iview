@@ -1,4 +1,4 @@
-// Type definitions for iview 3.1.0
+// Type definitions for iview 3.3.1
 // Project: https://github.com/iview/iview
 // Definitions by: yangdan
 // Definitions: https://github.com/yangdan8/iview.git
@@ -112,6 +112,10 @@ export declare interface DatePicker extends Vue {
    */
   'time-picker-options'?: object;
   /**
+   * 两个日期间的分隔符
+   */
+  'separator'?: string;
+  /**
    * 日期发生变化时触发	已经格式化后的日期，比如 2016-01-01
    */
   $emit(eventName: 'on-change', value: string): this;
@@ -127,6 +131,10 @@ export declare interface DatePicker extends Vue {
    * 在 confirm 模式或 clearable = true 时有效，在清空日期时触发
    */
   $emit(eventName: 'on-clear'): this;
+  /**
+   * 点击外部关闭下拉菜单时触发
+   */
+  $emit(eventName: 'on-clickoutside',event: MouseEvent): this;
   /**
    * slot插槽对象
    */
