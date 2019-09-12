@@ -2,9 +2,9 @@
     <div>
         <Button type="primary" @click="modal1 = true">Display dialog box</Button>
         <Button type="primary" @click="modal2 = true">Display dialog box</Button>
-        <Modal v-model="modal2" title="Common Modal dialog box title"
+        <Modal v-model="modal2" draggable title="Common Modal dialog box title"
                @on-ok="ok"
-               @on-cancel="cancel" :styles="{top: '300px'}">
+               @on-cancel="cancel" :styles="{top: '300px', left: '100px'}">
             <p>2123</p>
         </Modal>
         <Modal
